@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Пример 8</title>
+</head>
+
+<body bgcolor="#c0c0c0">
+<h3>Анкета</h3>
+<form method="get" action="server.php" enctype="multipart/form-data"> 
+<p><b>Ваше имя:</b> <input type="text" name="fn" size="20" required autofocus></p>
+<p><b>Ваш E-mail:</b> <input type="email" name="em" size="20" required></p>
+
+<p><b>Пароль:</b> <input type="password" name="pas" size="20" required><br>
+
+<p><label for="gender"><b>Пол:</b></label>
+<select name="gnd" id="gender">
+<option value="мужской">мужской</option>
+<option value="женский">женский</option>
+</select>
+
+<p><b>Ваш возраст:</b> <br>
+<input type="radio" name="r1" value="до 30 лет" checked>до 30 лет
+<input type="radio" name="r1" value="31-65 лет">31-65 лет
+<input type="radio" name="r1" value="66 и больше лет">66 и больше лет</p>
+
+<p><b>Цвет глаз:</b> <input type="color" name="color" ></p>
+
+<p><b>Ваши увлечения:</b><br>
+<input type="checkbox" name="hb" value="компьютерные игры" checked>компьютерные игры
+<input type="checkbox" name="hb" id="hobby2" value="спорт/туризм" checked>спорт/туризм
+<input type="checkbox" name="hb" id="hobby3" value="кино/театр">кино/театр
+
+<p><b>Загрузите фото:</b> <input type="file" name="upl"></p>
+
+<p><textarea name="ab" rows="5" cols="30" placeholder="Расскажите о себе"></textarea></p>
+
+<p><b>Ваш заряд позитивом (min - max):</b><br>
+<input type="range" name="rg" min="0" max="100" step=".25" value="70" list="lst1"/>
+<datalist id="lst1">
+<option value="0" label="0%">
+<option value="50" label="50%">
+<option value="100" label="100%">
+</datalist>
+
+<p><b>Укажите дату и время:</b><br>
+<input type="date"><br>
+<input type="time"><br>
+<input type="datetime-local"><br>
+<input type="month"><br>
+<input type="week"><br></p>
+
+<p><input type="submit" name="b1" value="Отправить">
+<input type="reset" name="b2" value="Очистить" ></p>
+
+</form> 
+</body>
+</html>
